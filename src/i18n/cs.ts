@@ -1,7 +1,7 @@
 export const csTranslations = {
   header: {
     title: 'Portfolio Datové Analýzy',
-    subtitle: 'Jan Štrosser'
+    subtitle: 'Bc. Jan Štrosser'
   },
   hero: {
     title: 'Datově Poznatky a Analýzy',

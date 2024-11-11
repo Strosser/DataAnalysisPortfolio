@@ -1,7 +1,7 @@
 export const enTranslations = {
   header: {
     title: 'Data Analysis Portfolio',
-    subtitle: 'Jan Štrosser'
+    subtitle: 'Bc. Jan Štrosser'
   },
   hero: {
     title: 'Data & Analysis',
