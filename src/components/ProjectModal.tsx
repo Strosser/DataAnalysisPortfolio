@@ -4,13 +4,12 @@ import { useTranslation } from 'react-i18next';
 
 interface ProjectModalProps {
   project: {
+    id: string;
     title: string;
     description: string;
     fullDescription: string;
     tags: string[];
     image: string;
-    insights: string[];
-    methodology: string[];
     liveDemo?: string;
     github?: string;
   };
@@ -46,30 +45,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
           <p className="text-gray-600 mb-8">{project.fullDescription}</p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">{t('common.keyInsights')}</h3>
-              <ul className="space-y-2">
-                {project.insights.map((insight, i) => (
-                  <li key={i} className="flex items-start">
-                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                    <span className="text-gray-600">{insight}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-4">{t('common.methodology')}</h3>
-              <ul className="space-y-2">
-                {project.methodology.map((method, i) => (
-                  <li key={i} className="flex items-start">
-                    <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                    <span className="text-gray-600">{method}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4">{t('common.methodology')}</h3>
+            <ul className="space-y-2">
+              {t(`projects.${project.id}.methodology`, { returnObjects: true }).map((method: string, i: number) => (
+                <li key={i} className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                  <span className="text-gray-600">{method}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="flex gap-4">

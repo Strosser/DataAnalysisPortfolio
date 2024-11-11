@@ -12,23 +12,23 @@ export const csTranslations = {
       title: 'Analýza prodejů kávy',
       description: 'Analýza datasetu o prodeji kávy.',
       fullDescription: 'Analýza prodejních dat kávy pro identifikaci klíčových trendů a zlepšení obchodních strategií. Tento projekt využívá analytické nástroje v Excelu, včetně kontingenčních tabulek, pokročilých funkcí jako XLOOKUP a INDEX, pro podrobné zkoumání zákaznického chování a preferencí produktů. Výsledkem je identifikace trendů v prodeji a návrhy na optimalizaci skladových zásob a propagačních kampaní.',
-      insights: [
-        'Objeveno 15 významných asociací produktů s důvěryhodností > 80%',
-        'Identifikovány optimální strategie umístění produktů',
-        'Generováno 23% zvýšení příležitostí křížového prodeje',
-        'Vyvinut interaktivní dashboard pro analýzu v reálném čase'
-      ],
       methodology: [
-        'Čištění a příprava dat pomocí Pandas',
-        'Dolování asociačních pravidel pomocí algoritmu Apriori',
-        'Statistická analýza pomocí SciPy',
-        'Interaktivní vizualizace pomocí Plotly'
+        'Čištění a příprava dat: Odstranění duplikátů a přidání požadovaných hodnot.',
+        'Použití vzorce INDEX pro dynamické vykreslení hodnot z různých listů',
+        'Vytvořené kontingenční tabulky pro zodpovězení klíčové otázky pomocí slicerů a časových os',
+        'Interaktivní vizualizační panel pro ovládání všech grafů'
       ]
     },
     timeSeries: {
-      title: 'Analýza Zpožděných letů',
-      description: 'Předpovídání budoucích prodejních trendů pomocí pokročilých metod analýzy časových řad.',
-      fullDescription: 'Implementace sofistikovaných modelů předpovědi časových řad pro predikci budoucích prodejních trendů. Tento projekt kombinuje tradiční statistické metody s moderními přístupy strojového učení k dosažení vysoce přesných předpovědí.'
+      title: 'Analýza zpožděných letů',
+      description: 'Analýza datasetu o zpožděních letů pro zlepšení provozních strategií v letecké dopravě.',
+      fullDescription: 'Projekt se zaměřuje na vizualizaci a analýzu zpožděných letů pomocí Power BI. Cílem projektu je identifikovat hlavní příčiny zpoždění a analyzovat jejich dopad na celkový provoz. Pomocí pokročilých analytických funkcí Power BI, včetně DAX výpočtů a interaktivních filtrů, dashboard poskytuje přehled o trendech a vzorcích v datech a umožňuje optimalizaci provozu a strategické plánování.',
+      methodology: [
+        'Čištění a příprava dat: Úprava datasetu, odstranění chybějících hodnot a nastavení datových typů.',
+        'Použití DAX funkcí pro výpočty související s průměrnou dobou zpoždění, počtem zpožděných letů a jejich rozdělením podle příčin.',
+        'Vytvoření interaktivních vizualizací, které zahrnují geografické mapy, sloupcové grafy a časové řady pro lepší pochopení trendů.',
+        'Implementace filtrů a slicerů pro interaktivní analýzu, která umožňuje uživatelům zkoumat zpoždění podle letišť, aerolinek, času a dalších kategorií.'
+      ]
     }
   },
   common: {

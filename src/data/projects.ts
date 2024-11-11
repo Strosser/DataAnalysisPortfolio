@@ -17,12 +17,12 @@ export const projects = [
       "Developed interactive dashboard for real-time analysis"
     ],
     methodology: [
-      "Data cleaning",
-      "Association rule mining with Apriori algorithm",
-      "Statistical analysis using SciPy",
-      "Interactive visualization with Plotly"
+      "Data Cleaning and Preparation: Removal of duplicates and adding desired values using XLOOKUP Formulas",
+      "Using INDEX formula for dynamicly render values from different sheet",
+      "Created pivot tables for answer key question with slixers and timelines",
+      "Interactive visualization dashboard to controll all graphs"
     ],
-    github: "https://github.com/example/market-basket"
+    github: "https://github.com/Strosser/ExcelCoffeSales"
   },
   {
     id: 'timeSeries',
@@ -32,17 +32,9 @@ export const projects = [
     tags: ["PowerBI", "Excel", "Dashboard"],
     image: powerBI,
     insights: [
-      "Achieved 94% prediction accuracy",
-      "Identified seasonal patterns and trends",
-      "Reduced forecast error by 35%",
-      "Implemented automated anomaly detection"
     ],
     methodology: [
-      "ARIMA and Prophet modeling",
-      "Feature engineering for temporal data",
-      "Cross-validation for time series",
-      "Ensemble methods for improved accuracy"
     ],
-    github: "https://github.com/example/time-series"
+    github: "https://drive.google.com/drive/folders/1TApnQ2z5ndxWXGVaA6uG-FHeuptgNzAx?usp=sharing"
   }
 ];
